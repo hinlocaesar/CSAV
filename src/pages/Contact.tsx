@@ -11,6 +11,7 @@ import {
 import { Reveal } from '@/components/Reveal'
 import { PageHero, SectionHeading, Divider } from '@/components/Section'
 import { FacebookIcon } from '@/components/icons'
+import { EmailText } from '@/components/EmailText'
 import { addressOneLine, school } from '@/lib/site'
 
 const levels = [
@@ -137,7 +138,11 @@ export default function Contact() {
                     {d.label}
                   </h3>
                   <p className="mt-2.5 flex-1 text-sm leading-relaxed break-words text-ink-soft">
-                    {d.value}
+                    {/^[^@\s]+@[^@\s]+$/.test(d.value) ? (
+                      <EmailText value={d.value} />
+                    ) : (
+                      d.value
+                    )}
                   </p>
                   <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-700 transition-all group-hover:gap-2.5">
                     {d.action}

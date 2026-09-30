@@ -155,10 +155,10 @@ export default function About() {
                       {block.label}
                     </h3>
                     <p
-                      className={`mt-3 leading-relaxed text-ink-soft ${
-                        block.label === 'Philosophy'
-                          ? 'font-display text-xl text-ink'
-                          : 'text-base'
+                      className={`mt-3 leading-relaxed ${
+                        block.label === 'Mission'
+                          ? 'text-base text-ink-soft'
+                          : 'font-display text-xl text-ink'
                       }`}
                     >
                       {block.text}

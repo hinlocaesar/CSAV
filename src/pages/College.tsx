@@ -108,7 +108,7 @@ export default function College() {
                       {program.description}
                     </p>
 
-                    <div className="mt-7 border-t border-ink/8 pt-5">
+                    <div className="mt-7 mb-7 border-t border-ink/8 pt-5">
                       <p className="text-[0.65rem] font-bold tracking-[0.16em] text-gold-600 uppercase">
                         Career paths
                       </p>
@@ -130,7 +130,7 @@ export default function College() {
 
                     <Link
                       to="/admissions"
-                      className="mt-7 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-brand-700 transition hover:gap-2.5"
+                      className="mt-auto inline-flex items-center gap-1.5 self-start pt-7 text-sm font-semibold text-brand-700 transition hover:gap-2.5"
                     >
                       Requirements
                       <ArrowUpRight className="h-4 w-4" aria-hidden />

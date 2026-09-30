@@ -166,7 +166,7 @@ export default function Home() {
                   <dt className="text-xs tracking-wide text-white/50 uppercase">
                     Founded
                   </dt>
-                  <dd className="mt-1.5 font-display text-3xl font-semibold text-gold-200">
+                  <dd className="mt-1.5 font-display text-2xl font-semibold whitespace-nowrap text-gold-200 sm:text-3xl">
                     {school.founded}
                   </dd>
                 </div>
@@ -174,7 +174,7 @@ export default function Home() {
                   <dt className="text-xs tracking-wide text-white/50 uppercase">
                     Grade levels
                   </dt>
-                  <dd className="mt-1.5 font-display text-3xl font-semibold">
+                  <dd className="mt-1.5 font-display text-2xl font-semibold whitespace-nowrap sm:text-3xl">
                     <CountUp to={14} />
                     <span className="text-white/40"> K–12</span>
                   </dd>
@@ -183,7 +183,7 @@ export default function Home() {
                   <dt className="text-xs tracking-wide text-white/50 uppercase">
                     Programmes
                   </dt>
-                  <dd className="mt-1.5 font-display text-3xl font-semibold">
+                  <dd className="mt-1.5 font-display text-2xl font-semibold whitespace-nowrap sm:text-3xl">
                     <CountUp to={programs.length} />
                   </dd>
                 </div>
@@ -199,7 +199,7 @@ export default function Home() {
                   aria-hidden
                   className="absolute -inset-6 rounded-[2.5rem] bg-gradient-to-br from-gold-400/25 via-transparent to-forest-400/25 blur-2xl"
                 />
-                <div className="grain relative overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.045] p-10 backdrop-blur-sm">
+                <div className="grain relative overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.045] px-10 pt-10 pb-20 backdrop-blur-sm">
                   <div className="flex flex-col items-center">
                     <Seal className="h-44 w-44 text-gold-300" />
                     <p className="mt-7 font-display text-center text-lg leading-snug font-medium text-white/90">

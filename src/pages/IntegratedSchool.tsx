@@ -185,10 +185,10 @@ export default function IntegratedSchool() {
                           {s.code}
                         </span>
                         <span className="min-w-0">
-                          <span className="block truncate text-sm font-semibold">
+                          <span className="block text-sm leading-snug font-semibold text-balance">
                             {s.name}
                           </span>
-                          <span className="mt-0.5 block truncate text-xs text-white/55">
+                          <span className="mt-0.5 block text-xs leading-snug text-white/55">
                             {s.blurb}
                           </span>
                         </span>

@@ -80,7 +80,7 @@ export function Navbar() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
@@ -118,7 +118,7 @@ export function Navbar() {
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
               aria-label={open ? 'Close menu' : 'Open menu'}
-              className="grid h-10 w-10 place-items-center rounded-full border border-ink/15 text-ink transition hover:border-brand-700 hover:text-brand-700 md:hidden"
+              className="grid h-10 w-10 place-items-center rounded-full border border-ink/15 text-ink transition hover:border-brand-700 hover:text-brand-700 lg:hidden"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -128,7 +128,7 @@ export function Navbar() {
 
       {/* Mobile sheet */}
       <div
-        className={`fixed inset-0 z-40 md:hidden ${
+        className={`fixed inset-0 z-40 lg:hidden ${
           open ? 'pointer-events-auto' : 'pointer-events-none'
         }`}
         aria-hidden={!open}

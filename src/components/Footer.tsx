@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react'
 import { Mark } from './Seal'
 import { FacebookIcon } from './icons'
+import { EmailText } from './EmailText'
 import { addressOneLine, navLinks, school } from '@/lib/site'
 
 export function Footer() {
@@ -111,9 +112,9 @@ export function Footer() {
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold-300" aria-hidden />
                 <a
                   href={`mailto:${school.contact.email}`}
-                  className="break-all text-white/75 transition hover:text-gold-300"
+                  className="text-white/75 transition hover:text-gold-300"
                 >
-                  {school.contact.email}
+                  <EmailText value={school.contact.email} />
                 </a>
               </li>
             </ul>

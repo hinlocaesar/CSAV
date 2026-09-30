@@ -1,0 +1,32 @@
+{
+  "name": "csav-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Official website of Colegio de Sta. Ana de Victorias, Victorias City, Negros Occidental",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "smoke": "esbuild scripts/smoke.tsx --bundle --alias:@=./src --format=esm --platform=browser --jsx=automatic --outfile=node_modules/.cache/smoke.mjs --log-level=error && node scripts/run-smoke.mjs node_modules/.cache/smoke.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "lucide-react": "^1.49.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  }
+}

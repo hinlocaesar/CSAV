@@ -69,16 +69,23 @@ more legible range:
 
 ## Deploying to GitHub Pages
 
-The `Deploy site to GitHub Pages` workflow builds and publishes on every push to
-`main`. It does type-checking and the route smoke test first, so a broken build
-never reaches the live site.
+The `Deploy site to GitHub Pages` workflow runs on every push to `main`. It
+installs, type-checks, smoke-tests and builds **before** publishing, so a broken
+build can never reach the live site.
 
-To turn it on once, in the repository:
-
-1. **Settings → Pages → Build and deployment → Source** → choose **GitHub Actions**.
-2. Push to `main` (or run the workflow manually from the Actions tab).
-
-The site will be served at `https://hinlocaesar.github.io/CSAV/`.
+> **Current status: waiting on one manual step.** GitHub Pages is not yet
+> enabled for this repository, so the workflow fails at
+> `actions/configure-pages` with everything before it green. Enabling Pages is a
+> repository setting that only the owner can change:
+>
+> 1. Open **Settings → Pages** in this repository.
+> 2. Under **Build and deployment → Source**, choose **GitHub Actions**.
+> 3. Re-run the workflow from the **Actions** tab.
+>
+> The site will then be live at **https://hinlocaesar.github.io/CSAV/**
+>
+> Until that is done, the working link is the repository itself:
+> **https://github.com/hinlocaesar/CSAV**
 
 ## Content sources
 
